@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+	<script>
+		var counter = 0;
+		function showMenu() {
+			if (counter == 0) {
+				counter = 1;
+				document.getElementById('nav').style.display = "flex";				
+				}
+			else {
+				counter = 0;
+				document.getElementById('nav').style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+    <div id="background-blocks">
+        <img src="images/background-1.jpg" alt="">
+        <img src="images/background-2.jpg" alt="">
+    </div>
+    <nav id="nav">
+    	<p>
+    		<a href="#" id="">HOME</a>
+    	</p>
+    	<p>
+    		<a href="#video" id="">PRODUCTS</a>
+    	</p>
+    	<p>
+    		<a href="#about" id="">ABOUT</a>
+    	</p>
+    </nav>
+	<!--Header-->
+	<header>
+		<div id="header-menu" onclick="showMenu()">
+			<img src="images/101.png" alt="" id="h-menu-ico">
+			<p class="fifteen-bold-gray-letters" id="h-menu-text">
+				MENU
+			</p>
+		</div>
+		<div id="header-wooder">
+			<p class="wooder-letters">            
+				WOODER
+			</p>
+			<hr id="h-wooder-hr">
+		</div>
+		<div id="header-links">
+			<a class="fifteen-bold-gray-letters" id="" href="#">
+				HOME
+			</a>
+			<a class="fifteen-bold-gray-letters" id="" href="#video">
+				PRODUCTS
+			</a>
+			<a class="fifteen-bold-gray-letters" id="" href="#about">
+				ABOUT
+			</a>
+		</div>
+		<div id="header-right">
+			<img src="images/102.png" alt="" id="h-right-info">
+			<select name="language" class="fifteen-bold-gray-letters" id="h-right-lang">
+				<option value="EN">EN</option>
+				<option value="ES">ES</option>
+				<option value="RU">RU</option>
+			</select>
+		</div>
+	</header>
+	<div id="content">
+		<div id="wooder">
+			<p id="wooder-wooder">
+				WOODER
+			</p>
+			<a href="">
+				<div id="wooder-button">
+					<p class="learn-more-letters" id="wooder-learn">
+						LEARN MORE
+					</p>
+					<img src="images/104.png" alt="">
+				</div>                
+			</a>
+			<p id="wooder-furniture">
+				FURNITURE & DECOR
+			</p>
+			<img src="images/105.png" alt="" id="wooder-share">
+			<img src="images/108.png" alt="" id="wooder-mouse">
+			<img src="images/109.png" alt="" id="wooder-arrow">
+			<p id="wooder-scroll" class="fifteen-bold-gray-letters">
+				SCROLL
+			</p>
+			<p class="huge-letters" id="wooder-huge">
+				W
+			</p>
+			<hr class="fifty-one-hrs" id="wooder-hr">
+			<p id="wooder-one">
+				01
+			</p>
+			<div id="wooder-circles">
+				<input type="button">
+				<input type="button">
+				<input type="button">
+				<input type="button">
+			</div>
+			<hr class="fifty-one-hrs" id="wooder-lowerhr">
+		</div>
+		<div id="furniture">
+			<p class="forty-eight-black-letters" id="furniture-furniture">
+				FURNITURE
+			</p>
+			<hr class="long-black-hrs" id="furniture-blackhr">
+			<hr class="forty-four-four-hrs" id="furniture-hr1">
+			<p class="fifteen-black-letters" id="furniture-wooder">
+				Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+			</p>
+			<img src="images/203.jpg" alt="" id="furniture-picture">
+			<a href="#">
+			<p class="learn-more-letters" id="furniture-learn">
+				LEARN MORE
+			</p>
+			<img src="images/110.png" alt="" id="furniture-arrow">
+			<hr class="forty-four-four-hrs" id="furniture-hr2">				
+			</a>
+			<p class="black-digits" id="furniture-digit">
+				01<span>.</span>
+			</p>
+			<p class="huge-letters" id="furniture-huge">
+				F
+			</p>
+			<p class="large-letters" id="furniture-large">
+				FURNITURE
+			</p>
+		</div>
+		<div id="decor">
+			<hr class="fifty-one-hrs" id="decor-hr1">
+			<hr class="fifty-one-hrs" id="decor-hr2">
+			<img src="images/204.jpg" alt="" id="decor-picture">
+			<p class="forty-eight-black-letters" id="decor-decor">
+				DECOR
+			</p>
+			<hr class="long-black-hrs" id="decor-blackhr">
+			<p class="fifteen-black-letters" id="decor-we">
+				We make all types of wooden decor as<br>
+				per design given by Architect, Interior<br>
+				designer, contractor which is suitable
+			</p>
+			<hr class="forty-four-four-hrs" id="decor-hr3">
+			<a href="#">
+			<p class="learn-more-letters" id="decor-learn">
+				LEARN MORE
+			</p>
+			<img src="images/110.png" alt="" id="decor-arrow">
+			<hr class="forty-four-four-hrs" id="decor-hr4">				
+			</a>			
+			<p class="black-digits" id="decor-digit">
+				02<span>.</span>
+			</p>
+			<p class="huge-letters" id="decor-huge">
+				D
+			</p>
+			<p class="large-letters" id="decor-large">
+				DECOR
+			</p>
+		</div>
+		<div id="quality">
+			<p class="forty-eight-black-letters" id="quality-wooder">
+				WOODER − IS QUALITY
+			</p>
+			<hr class="forty-four-four-hrs" id="quality-hr1">
+			<p class="fifteen-black-letters" id="quality-we">
+				We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
+			</p>
+			<div id="quality-pictures">
+				<div>
+					<img src="images/207.jpg" alt="" class="quality-pictures">
+					<button class="quality-buttons">
+						<img src="images/107.png" alt="">
+					</button>
+				</div>
+				<div>                    
+					<img src="images/206.jpg" alt="" class="quality-pictures">
+					<button class="quality-buttons">
+						<img src="images/107.png" alt="">
+					</button>
+				</div>
+				<div>
+					<img src="images/205.jpg" alt="" class="quality-pictures">
+					<button class="quality-buttons">
+						<img src="images/107.png" alt="">
+					</button>                    
+				</div>             
+			</div>
+			<p id="quality-note1" class="quality-font">
+				Innovative Design
+			</p>
+			<p id="quality-note2" class="quality-font">
+				High-level Skills
+			</p>
+			<p id="quality-note3" class="quality-font">
+				Quality Products
+			</p>
+			<hr class="twenty-five-hrs" id="quality-hr2">
+			<hr class="twenty-five-hrs" id="quality-hr3">
+			<hr class="twenty-five-hrs" id="quality-hr4">
+			<p class="huge-letters" id="video-huge">
+				V
+			</p>
+		</div>
+		<div id="video">
+			<img src="images/103.png" alt="" id="video-play">
+			<div id="video-player">
+				<hr class="forty-four-four-hrs" id="v-player-hr1">
+				<hr class="long-black-hrs" id="v-player-whitehr">
+				<p id="v-player-we">
+					WE DO THE DESIGN<br>
+					OF ANY COMPLEXITY
+				</p>
+				<p id="v-player-this">
+					This is a team of professionals that make the furniture and
+					wood décor high standard. Creating modern designs.
+					Adhering to the global quality standards. And we are
+					doing work with love.
+				</p>
+				<a href="#">
+					<div id="v-player-watch">
+						<img src="images/106.png" alt="">
+						<p class="learn-more-letters" id="v-p-watch-watch">
+							WATCH VIDEO
+						</p>
+					</div>					
+				</a>
+				<hr id="v-player-hr">
+			</div>
+		</div>
+		<div id="about">
+			<img src="images/202.jpg" alt="" id="about-picture">
+			<p class="forty-eight-black-letters" id="about-about">
+				ABOUT US
+			</p>
+			<hr class="long-black-hrs" id="about-blackhr">
+			<p class="fifteen-black-letters" id="about-we">
+				We are a team of professionals in the wood
+				processing and the creation of wooden furniture 
+				of the highest class
+			</p>
+			<hr class="forty-four-four-hrs" id="about-hr1">
+			<a href="#">
+				<p class="learn-more-letters" id="about-learn">
+					LEARN MORE
+				</p>
+				<img src="images/110.png" alt="" id="about-arrow">
+				<hr class="forty-four-two-hrs" id="about-hr2">            
+			</a>
+			<p class="huge-letters" id="about-huge">
+				A
+			</p>
+			<p class="large-letters" id="about-large">
+				ABOUT US
+			</p>
+		</div>
+	</div>
+	<footer>
+		<div id="footer-copyright">
+			© 2016 WOODER
+		</div>
+		<div id="footer-wooder">
+			<p class="wooder-letters">
+				WOODER
+			</p>
+			<hr id="f-wooder-hr">
+		</div>
+	</footer>
+</body>
+</html>
